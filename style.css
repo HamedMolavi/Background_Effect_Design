@@ -1,0 +1,145 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 98.93vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+:root {
+    --firstColor: rgb(55, 73, 95);
+    --secondColor: rgb(101, 194, 113);
+    --thirdColor: rgb(218, 96, 73);
+    --forthColor: rgb(199, 96, 38);
+    --fifthColor: rgb(145, 102, 181);
+}
+.color1{
+    background-color: var(--firstColor);
+}
+.color2{
+    background-color: var(--secondColor);
+}
+.color3{
+    background-color: var(--thirdColor);
+}
+.color4{
+    background-color: var(--forthColor);
+}
+.color5{
+    background-color: var(--fifthColor);
+}
+/* --------------------------------------------------------------------- */
+.navContainer{
+    position: fixed;
+    right: 2px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.circle:hover{
+    cursor: pointer;
+}
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.btn{
+    border: 2px solid white;
+    color: white;
+    font-size: x-large;
+    font-family: sans-serif;
+    width: 600px;
+    height: 80px;
+    text-align: center;
+    border-radius: 4px;
+}
+#btn1:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--firstColor);
+}
+#btn2:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--secondColor);
+}
+#btn3:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--thirdColor);
+}
+#btn4:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--forthColor);
+}
+#btn5:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--fifthColor);
+}
+#btn1:active{
+    cursor: pointer;
+    background-color: var(--firstColor);
+    color: white;
+}
+#btn2:active{
+    cursor: pointer;
+    background-color: var(--secondColor);
+    color: white;
+}
+#btn3:active{
+    cursor: pointer;
+    background-color: var(--thirdColor);
+    color: white;
+}
+#btn4:active{
+    cursor: pointer;
+    background-color: var(--forthColor);
+    color: white;
+}
+#btn5:active{
+    cursor: pointer;
+    background-color: var(--fifthColor);
+    color: white;
+}
+
+.img{
+    width: 40%;
+    height: 50%;
+}
+.img::before{   
+    background: transparent;
+}
+.innerContainer{
+    height: 200px;
+    width: min-content;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
